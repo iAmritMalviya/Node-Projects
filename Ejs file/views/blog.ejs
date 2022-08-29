@@ -1,0 +1,12 @@
+<%- include('header') %>
+
+<% posts.forEach(element =>{ %>
+ <h1> <%= (element.title) %> </h1>
+ 
+ <p> <%= (element.content).substr(0, 5) + "..." %> <a href="/posts/<%=element.title%>">Read more</a></p>
+ 
+ <%})%>
+
+
+
+<%- include('footer') %>
